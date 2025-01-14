@@ -1,0 +1,6 @@
+/* Apply a line-through and change color when task is completed */
+.completed {
+    text-decoration: line-through;   /* Strikes through the text */
+    color: grey;                    /* You can change the color to indicate it's completed */
+  }
+  

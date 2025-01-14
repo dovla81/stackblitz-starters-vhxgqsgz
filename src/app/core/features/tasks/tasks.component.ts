@@ -45,8 +45,10 @@ export class TasksComponent {
   }
 
   deleteTask(task : Task) {
-    alert("Deleting task" + task)
+    console.log("Deleting task:", task);
+    console.log("Deleting task: " + JSON.stringify(task));
     this.taskService.deleteTask(task);
+    this.tasks = this.taskService.getTasks();  // Refresh the tasks array
   }
   
 
